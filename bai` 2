@@ -1,0 +1,27 @@
+phần 1: phân tích
+
+lời giải ban đầu có một số chỗ bị nhầm đơn vị.
+
+đầu tiên, 100 mbps không bằng 100 mb/s. vì 1 byte = 8 bit nên:
+
+100 mbps ÷ 8 = 12,5 mb/s.
+
+vì vậy, nếu trình duyệt hiển thị tốc độ 12,5 mb/s thì đây là tốc độ tối đa theo lý thuyết của gói mạng 100 mbps, chứ không phải nhà mạng chỉ cung cấp 12,5% tốc độ.
+
+tiếp theo, khi mạng giảm xuống 40 mbps thì cần đổi sang mb/s:
+
+40 mbps ÷ 8 = 5 mb/s.
+
+với file có dung lượng 1 gb:
+
+1 gb = 1024 mb.
+
+thời gian tải file là:
+
+1024 ÷ 5 = 204,8 giây, tương đương khoảng 3 phút 25 giây.
+
+phần 2: kết luận
+
+nguyên nhân của sai sót là do nhầm lẫn giữa mbps và mb/s. sau khi quy đổi đúng, 100 mbps tương đương 12,5 mb/s. vì vậy, tốc độ tải 12,5 mb/s không có nghĩa là nhà mạng chỉ cung cấp 12,5% tốc độ cam kết.
+
+do đó, nam không cần khiếu nại nhà mạng dựa trên thông tin này.
