@@ -1,0 +1,47 @@
+Phép tính sai:
+
+Quy đổi 1000 ảnh bài giảng:
+
+4 MB × 1000 = 4000 MB = 4 GB (Sai)
+
+Nguyên nhân:
+
+Hệ số chuẩn: Máy tính dùng hệ cơ số 2, quy đổi 1 GB = 1024 MB, không phải 1000 MB.
+
+Thực tế:
+
+4000 MB = 4000 ÷ 1024 ≈ 3,91 GB.
+
+Kết luận:
+
+Sinh viên tính nhầm làm tổng dung lượng sử dụng bị thổi phồng lên 4 GB. Do đó, dung lượng trống thực tế trên máy sẽ nhiều hơn con số 112 GB tính toán sai ban đầu.
+
+Phần 2: Lời giải đúng
+
+Tính toán lại:
+
+Bộ công cụ lập trình: 40 GB.
+
+1000 ảnh bài giảng: (4 MB × 1000) ÷ 1024 ≈ 3,91 GB.
+
+50 phim Full HD: 2 GB × 50 = 100 GB.
+
+Tổng dung lượng sử dụng:
+
+40 + 3,91 + 100 ≈ 143,91 GB.
+
+Dung lượng còn trống:
+
+256 − 143,91 ≈ 112,09 GB.
+
+Kiểm tra lưu thêm 500 bài hát MP3:
+
+Nhu cầu:
+
+(5 MB × 500) ÷ 1024 ≈ 2,44 GB.
+
+Kết luận:
+
+Đủ dung lượng.
+
+Dung lượng trống hiện tại khoảng 112,09 GB, trong khi 500 bài hát chỉ cần khoảng 2,44 GB. Sau khi lưu, máy vẫn còn khoảng 109,65 GB trống
