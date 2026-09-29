@@ -1,0 +1,31 @@
+phần 1: phân tích vấn đề
+
+báo cáo hiện tại đang có một số chỗ nhầm lẫn giữa các tầng trong mô hình DIKW.
+
+đầu tiên, câu “Khách hàng A thường xuyên vắng nhà vào buổi sáng” không còn là dữ liệu thô. Đây là một nhận định được rút ra từ việc phân tích nhiều thông tin về lịch sử giao hàng, nên thuộc tầng Knowledge.
+
+tiếp theo, chuỗi 1205, 50000, 0912345678 chỉ là những giá trị riêng lẻ và chưa có ngữ cảnh cụ thể. Chưa biết chúng là mã đơn hàng, số tiền hay số điện thoại nên đây là Data.
+
+câu “Đề xuất giao hàng cho khách A vào buổi chiều để tăng tỷ lệ thành công” thể hiện một hành động cụ thể dựa trên tri thức đã có. Vì vậy, câu này thuộc tầng Wisdom.
+
+cuối cùng, “Bảng thống kê số đơn giao trễ trong tháng” là dữ liệu đã được tổng hợp và sắp xếp thành thông tin có ý nghĩa, nên thuộc tầng Information.
+
+phần 2: định nghĩa các tầng DIKW
+
+Data là các con số, ký hiệu hoặc sự kiện thô, chưa được xử lý và chưa có ngữ cảnh rõ ràng.
+
+Information là dữ liệu đã được sắp xếp, xử lý và đặt vào bối cảnh để có ý nghĩa cụ thể.
+
+Knowledge là sự hiểu biết được rút ra sau khi phân tích, so sánh và tổng hợp thông tin, giúp giải thích nguyên nhân hoặc quy luật.
+
+Wisdom là việc vận dụng tri thức để đưa ra quyết định hoặc hành động phù hợp trong thực tế.
+
+phần 3: sắp xếp lại theo DIKW
+
+Data: 1205, 50000, 0912345678 vì đây là các giá trị thô, chưa có ý nghĩa cụ thể.
+
+Information: Bảng thống kê số đơn giao trễ trong tháng vì dữ liệu đã được tổng hợp và trình bày có cấu trúc.
+
+Knowledge: “Khách hàng A thường xuyên vắng nhà vào buổi sáng” vì đây là nhận định được rút ra từ việc phân tích thông tin lịch sử giao hàng.
+
+Wisdom: “Đề xuất giao hàng cho khách A vào buổi chiều để tăng tỷ lệ thành công” vì đây là quyết định hành động dựa trên tri thức đã có.
