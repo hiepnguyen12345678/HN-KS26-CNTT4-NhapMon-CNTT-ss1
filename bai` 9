@@ -1,0 +1,41 @@
+Bài 9: thiết kế và tối ưu hệ thống lưu trữ ảnh bằng chứng giao hàng (POD) tại FastShip
+
+phân tích mô hình IPO
+
+Input: Mã đơn hàng, thời gian giao, tọa độ GPS, 2 ảnh POD và thông tin thiết bị của tài xế.
+
+Process: Hệ thống kiểm tra định dạng và dung lượng ảnh. Nếu ảnh lớn hơn 5 MB thì tự động nén xuống khoảng 1,5–3 MB. Sau đó, hệ thống đặt tên, gắn metadata như GPS và thời gian rồi lưu ảnh lên Cloud Storage và đường dẫn vào cơ sở dữ liệu.
+
+Output: Gửi xác nhận giao hàng thành công, cập nhật đường dẫn ảnh POD và thông báo trạng thái đơn hàng cho khách hàng.
+
+xử lý ảnh có dung lượng lớn hơn 5 MB
+
+Ảnh được nén ngay trên Shipper App trước khi gửi lên Server để giảm dung lượng và thời gian truyền tải.
+
+Server cũng thiết lập giới hạn dung lượng tệp. Nếu ảnh vẫn vượt quá 5 MB, hệ thống sẽ tự động nén trước khi lưu trữ lâu dài.
+
+tính dung lượng lưu trữ trong 1 tháng
+
+Số ảnh mỗi ngày:
+
+50.000 × 2 = 100.000 ảnh
+
+Dung lượng mỗi ngày:
+
+100.000 × 3 MB = 300.000 MB
+
+Dung lượng trong 30 ngày:
+
+300.000 × 30 = 9.000.000 MB
+
+Quy đổi sang TB:
+
+9.000.000 ÷ 1.048.576 ≈ 8,58 TB
+
+Nếu tính theo hệ thập phân:
+
+9.000.000 ÷ 1.000.000 = 9 TB
+
+kết luận
+
+FastShip cần khoảng 8,58 TB dung lượng lưu trữ khả dụng mỗi tháng để lưu ảnh POD theo các thông số đã cho.
